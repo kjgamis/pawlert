@@ -13,10 +13,10 @@
             "image": "https://placedog.net/800/640?id=177",
             "age": 1.5,
             "breed": "Scottish Terrier",
-            "bodyTemperature": 40,
-            "heartRate": 120,
-            "heartRateLevel": "Normal",
-            "bodyTempLevel": "Normal"
+            "bodyTemperature": 30,
+            "heartRate": 130,
+            "heartRateLevel": "Bad",
+            "bodyTempLevel": "Bad"
         }
     }
 }

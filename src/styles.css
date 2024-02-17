@@ -32,14 +32,12 @@ a{
     margin-top: 50px;
     width: 189px;
     height: 146px;
-    background-color: gray;
 }
 
 .title{
     margin-top: 12px;
     width: 189px;
     height: 58px;
-    background-color: gray;
 }
 
 .login{
@@ -335,14 +333,16 @@ input{
 
 #loc{
     text-decoration: underline;
-    text-decoration-thickness: 1.2px;
+    text-decoration-thickness: 1.3px;
     margin-left: 4px;
+    text-underline-position: under;
 }
 
 #temp{
     margin-left: 4px;
     text-decoration: underline;
-    text-decoration-thickness: 1.2px;
+    text-decoration-thickness: 1.3px;
+    text-underline-position: under;
 }
 
 .petInfo{
@@ -364,6 +364,7 @@ input{
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    box-shadow: 0em -2em 1em rgb(0 0 0 / 15%) inset;
 }
 
 #breed{
@@ -439,9 +440,9 @@ input{
 
 .commentBox{
     margin-top: 17px;
-    margin-bottom: 35px;
+    margin-bottom: 45px;
     width: 353px;
-    height: 215px;
+    height: 186px;
     background-image: url('img/speechbubble.svg');
     padding-top: 30px;
 }
@@ -462,8 +463,8 @@ input{
 }
 
 .info_place{
-    width: 361px;
-    height: 129px;
+    width: 350px !important;
+    height: 129px !important;
     border-radius: 10px;
     background-color: white;
     margin-bottom: 17px;
@@ -494,6 +495,7 @@ input{
     background-color: #F9F9F9;
     align-items: center;
     justify-content: center;
+    margin-top: 10px;
     box-shadow: 0.01em -0.2em 0.3em rgb(0 0 0 / 5%);
 }
 
@@ -544,4 +546,27 @@ input{
     text-align: left;
     margin-top: 8px;
     line-height: 24px;
+}
+
+.swiper-pagination{
+    --swiper-theme-color: #506FF2;
+    --swiper-pagination-bullet-inactive-color: #506FF2;
+}
+
+.swiper{
+    display: flex !important;
+}
+
+.swipe1 {
+    box-shadow: 0.02em 0.05em 0.4em rgb(0 0 0 / 10%);
+    width: 350px !important;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+
+.swipe2 {
+    box-shadow: 0.02em 0.05em 0.4em rgb(0 0 0 / 10%);
+    width: 350px !important;
+    margin-left: 11px;
+    border-radius: 10px;
 }
