@@ -439,9 +439,9 @@ input{
 
 .commentBox{
     margin-top: 17px;
-    margin-bottom: 35px;
+    margin-bottom: 45px;
     width: 353px;
-    height: 215px;
+    height: 186px;
     background-image: url('img/speechbubble.svg');
     padding-top: 30px;
 }
@@ -462,11 +462,11 @@ input{
 }
 
 .info_place{
-    width: 361px;
-    height: 129px;
+    width: 361px !important;
+    height: 129px !important;
     border-radius: 10px;
     background-color: gray;
-    margin-bottom: 17px;
+    margin-bottom: 55px;
 }
 
 .pagination{
@@ -493,6 +493,7 @@ input{
     background-color: #d9d9d9;
     align-items: center;
     justify-content: center;
+    margin-top: 10px;
 }
 
 .map, .myPet, .settings{
@@ -542,4 +543,9 @@ input{
     text-align: left;
     margin-top: 8px;
     line-height: 24px;
+}
+
+.swiper-pagination{
+    --swiper-theme-color: #506FF2;
+    --swiper-pagination-bullet-inactive-color: #506FF2;
 }

@@ -37,3 +37,12 @@ function showHeroes(jsonObj) {
     humidity.innerHTML  = 'Humidity: ' + jsonObj.data.weather.humidity + '%';
     nowTemperature.innerHTML = jsonObj.data.weather.temperature + '°C';
   }
+
+  let swiper = new Swiper(".mySwiper", {
+    spaceBetween: 50,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+   });
+ 
