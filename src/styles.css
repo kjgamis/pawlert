@@ -335,11 +335,14 @@ input{
 
 #loc{
     text-decoration: underline;
+    text-decoration-thickness: 1.2px;
     margin-left: 4px;
 }
 
 #temp{
     margin-left: 4px;
+    text-decoration: underline;
+    text-decoration-thickness: 1.2px;
 }
 
 .petInfo{
@@ -469,8 +472,18 @@ input{
 .pagination{
     width: 60px;
     height: 11px;
-    background-color: gray;
+    /* background-color: gray; */
     margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dot {
+    width: 11px;
+    height: auto;
+    background-color: black;
+    border-radius: 50px;
 }
 
 .nav{
@@ -485,13 +498,15 @@ input{
 .map, .myPet, .settings{
     width: 52px;
     height: 52px;
-    background-color: gray;
+    /* background-color: gray; */
 }
 
 .button{
     display: flex;
     margin-top: 14px;
     margin-bottom: 14px;
+    color: #506FF2;
+    font-size: 35px;
 }
 
 .myPet, .map{
