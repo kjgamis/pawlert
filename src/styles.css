@@ -465,8 +465,9 @@ input{
     width: 361px;
     height: 129px;
     border-radius: 10px;
-    background-color: gray;
+    background-color: white;
     margin-bottom: 17px;
+    box-shadow: 0.1em 0.1em 0.5em rgb(0 0 0 / 10%);
 }
 
 .pagination{
@@ -490,9 +491,10 @@ input{
    width: 393px;
    height: 80px;
    display: flex;
-    background-color: #d9d9d9;
+    background-color: #F9F9F9;
     align-items: center;
     justify-content: center;
+    box-shadow: 0.01em -0.2em 0.3em rgb(0 0 0 / 5%);
 }
 
 .map, .myPet, .settings{
