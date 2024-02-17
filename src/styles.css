@@ -32,14 +32,12 @@ a{
     margin-top: 50px;
     width: 189px;
     height: 146px;
-    background-color: gray;
 }
 
 .title{
     margin-top: 12px;
     width: 189px;
     height: 58px;
-    background-color: gray;
 }
 
 .login{
@@ -335,14 +333,16 @@ input{
 
 #loc{
     text-decoration: underline;
-    text-decoration-thickness: 1.2px;
+    text-decoration-thickness: 1.3px;
     margin-left: 4px;
+    text-underline-position: under;
 }
 
 #temp{
     margin-left: 4px;
     text-decoration: underline;
-    text-decoration-thickness: 1.2px;
+    text-decoration-thickness: 1.3px;
+    text-underline-position: under;
 }
 
 .petInfo{
@@ -364,6 +364,7 @@ input{
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    box-shadow: 0em -2em 1em rgb(0 0 0 / 15%) inset;
 }
 
 #breed{
@@ -462,12 +463,12 @@ input{
 }
 
 .info_place{
-    width: 361px !important;
+    width: 350px !important;
     height: 129px !important;
     border-radius: 10px;
     margin-bottom: 55px;
     background-color: white;
-    box-shadow: 0.1em 0.1em 0.5em rgb(0 0 0 / 10%);
+    box-shadow: 0.02em 0.05em 0.4em rgb(0 0 0 / 10%);
 }
 
 .pagination{
@@ -550,4 +551,22 @@ input{
 .swiper-pagination{
     --swiper-theme-color: #506FF2;
     --swiper-pagination-bullet-inactive-color: #506FF2;
+}
+
+.swiper{
+    display: flex !important;
+}
+
+.swipe1 {
+    box-shadow: 0.02em 0.05em 0.4em rgb(0 0 0 / 10%);
+    width: 350px !important;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+
+.swipe2 {
+    box-shadow: 0.02em 0.05em 0.4em rgb(0 0 0 / 10%);
+    width: 350px !important;
+    margin-left: 11px;
+    border-radius: 10px;
 }
