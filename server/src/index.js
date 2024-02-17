@@ -1,4 +1,4 @@
-import { Ai } from './vendor/@cloudflare/ai.js';
+import { Ai } from '@cloudflare/ai';
 
 const API_KEY = "d9442ae097e08ac8353888ae1852995b737e4851"
 
