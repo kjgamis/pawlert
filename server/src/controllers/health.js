@@ -1,34 +1,19 @@
-const { askAi } = require('../helpers')
+const { askAi, getAddress, getWeather } = require('../helpers')
 
 const health = async (c) => {
   let { location, pet } = await c.req.json()
-  const token = location.API_KEY
-  let weatherApi = "https://api.waqi.info/feed/geo:" + `${location.latitude};${location.longitude}/?token=${token}`
 
-  const init = {
-    headers: {
-      "content-type": "application/json;charset=UTF-8",
-    }
-  }
+  const weatherRes = await getWeather(location.latitude, location.longitude, location.WEATHER_API_KEY)
+  const addressRes = await getAddress(location.latitude, location.longitude, location.MAPS_API_KEY)
 
-  const response = await fetch(weatherApi, init)
-  const content = await response.json()
-
-  let city = content.data.city.name
-  let temperature = content.data.iaqi.t?.v
-  let humidity = content.data.iaqi.h?.v
-  let time = content.data.time.s
+  let city = weatherRes.data.city.name
+  let temperature = weatherRes.data.iaqi.t?.v
+  let humidity = weatherRes.data.iaqi.h?.v
+  let time = weatherRes.data.time.s
 
   let weatherSafelyLevel
   let bodyTempLevel
   let heartRateLevel
-  let res = {
-    status: 500,
-    data: {
-      weather: {},
-      pet: {}
-    }
-  }
 
   if (temperature && city) {
 
@@ -38,8 +23,18 @@ const health = async (c) => {
 
     bodyTempLevel = await askAi(c, `My ${pet.weight}lb ${pet.age} years old ${pet.breed} dog's heart rate is ${pet.heartRate}bpm and his body temperature is ${pet.bodyTemperature}degC, and the temperature outside is ${temperature}degC. He does not have health concerns. Is my dog's body temperature normal, hazardous or fatal. Return a one word response only`)
   }
+
+  let res = {
+    status: 500,
+    data: {
+      weather: {},
+      pet: {}
+    }
+  }
+
   if (city && time && temperature) {
     res.status = 200
+    res.data.weather.address = addressRes
     res.data.weather.city = city
     res.data.weather.time = time
     res.data.weather.temperature = temperature
