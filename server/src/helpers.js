@@ -21,24 +21,25 @@ const getAddress = async (latitude, longitude, key) => {
 
   const res = await fetch(geocodeApi);
   const addressRes = await res.json()
-  const formattedAddress = `${addressRes.results[0].address_components[0].short_name} ${addressRes.results[0].address_components[1].short_name}`
-
-  return formattedAddress
+  const address = {
+    street: `${addressRes.results[0].address_components[0].short_name} ${addressRes.results[0].address_components[1].short_name}`,
+    city: addressRes.results[0].address_components[5].short_name
+  }
+  return address
 }
 
 const getWeather = async (latitude, longitude, key) => {
-  let weatherApi = "https://api.waqi.info/feed/geo:" + `${latitude};${longitude}/?token=${key}`
+  let weatherApi = `https://api.waqi.info/feed/geo:${latitude};${longitude}/?token=${key}`
 
   const init = {
     headers: {
       "content-type": "application/json;charset=UTF-8",
     }
   }
-
   const res = await fetch(weatherApi, init)
   const weatherRes = await res.json()
 
-  return weatherRes
+  return weatherRes.data
 }
 
 module.exports = {
