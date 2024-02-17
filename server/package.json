@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "@cloudflare/ai": "^1.0.50",
-    "@googlemaps/js-api-loader": "^1.16.6",
     "hono": "^4.0.4"
   }
 }
