@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Favicon (for later)
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+    <meta name="viewport" content="width=393, height=852" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/210e747fd0.js" crossorigin="anonymous"></script>
+    <title>Log In</title>
+  </head>
+  
+  <body>
+    <div class="content">
+        <div class="top">
+            <div class="location"><i class="fa-solid fa-location-dot"></i><div id="loc">11 Arboretum Ln</div></div>
+            <div class="temperature"><img class="sunny" src="img/sunny.svg"><div id="temp">16°C</div></div>
+        </div>
+        <div class="petInfo">
+            <div id="petProfic">
+                <div id="breed">French Bulldog</div>
+                <div id="infoNA">Misa, 4</div>
+            </div>
+            <div id="petStatus">
+                <div class="bodyTemp">
+                    <div class="title_status">
+                        Body temparature
+                        <div id="bodyTempLevel">Normal</div>
+                    </div>
+                    <div class="bodyTempClass">
+                        <div id="bodyTemp">40</div> <span class="addinfo">°C</span>
+                    </div>
+                </div>
+                <div class="heartRate">
+                    <div class="title_status">
+                        Heart rate
+                        <div id="heartRateLevel">Caution</div>
+                    </div>
+                    <div class="heartRateClass">
+                        <div id="heartRate">150</div> <span class="addinfo">BPM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="commentBox">
+            <div class="topbubble">
+                <div class="alert1" id="alert1">
+                    Safe to go out!
+                </div>
+                <div class="humidity" id="humidity">
+                    Humidity: 45%
+                </div>
+            </div>
+            <div class="middlebubble">
+                <div id="nowTemperature">
+                    20°C
+                </div>
+                is just right for me!
+            </div>
+            <div class="bottombubble" id="bottombubble">
+                I could walk, I could run, I could sniff around...
+I just need to stay hydrated and occasionally hide in the shade!
+            </div>
+        </div>
+        <div class="recommandationPlace">
+            <div class="title_place">Things To Do with Me </div>
+            <div class="info_place"></div>
+            <div class="pagination"></div>
+        </div>
+        <div class="nav">
+            <div class="button">
+                <div class="map"></div>
+                <div class="myPet"></div>
+                <div class="settings"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js" type="module" ></script>
+  </body>
+</html>

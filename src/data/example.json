@@ -1,0 +1,22 @@
+{
+    "status": 200,
+    "data": {
+        "weather": {
+            "city": "Toronto",
+            "time": "2024-02-17 12:00:00",
+            "temperature": -4.3,
+            "humidity": 54.6,
+            "weatherSafelyLevel": "Caution"
+        },
+        "pet": {
+            "name": "Dapper",
+            "image": "https://placedog.net/800/640?id=177",
+            "age": 1.5,
+            "breed": "Scottish Terrier",
+            "bodyTemperature": 40,
+            "heartRate": 120,
+            "heartRateLevel": "Normal",
+            "bodyTempLevel": "Normal"
+        }
+    }
+}

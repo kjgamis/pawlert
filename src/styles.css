@@ -1,0 +1,530 @@
+body{
+    font-family: "Archivo", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.colorGray{
+    color: #d9d9d9;
+}
+
+.content{
+    height: 852px;
+    width: 393px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.semiBold{
+    font-weight: 500;
+}
+
+.logo{
+    margin-top: 50px;
+    width: 189px;
+    height: 146px;
+    background-color: gray;
+}
+
+.title{
+    margin-top: 12px;
+    width: 189px;
+    height: 58px;
+    background-color: gray;
+}
+
+.login{
+    width: 301px;
+    height: 51px;
+    border-radius: 10px;
+    background-color: #506FF2;
+    color: white;
+    margin-top: 200px;
+    font-size: 12px;
+}
+
+.signup{
+    width: 301px;
+    height: 51px;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid #506FF2;
+    color: #506FF2;
+    margin-top: 24px;
+    font-size: 12px;
+}
+
+.centerBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title_big{
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 219px;
+    text-align: left;
+    width: 301px;
+}
+
+.subtitle{
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 7px;
+    text-align: left;
+    width: 301px;
+}
+
+.email, .password{
+    margin-top: 37px;
+    width: 301px;
+    height: 51px;
+    background-color: white;
+    border: 2px solid #D9D9D9;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.fa-envelope, .fa-lock{
+    font-size: 15px;
+    margin-left: 11px;
+    margin-right: 10px;
+}
+
+.leftBox{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.forgotPassword{
+    font-size: 12px;
+    text-decoration: underline;
+    margin-top: 5px;
+    text-align: right;
+    width: 301px;
+}
+
+.loginPage{
+    margin-top: 15px;
+}
+
+.newAccount{
+    margin-top: 280px;
+    font-size: 12px;
+}
+
+.loginSignUp{
+    margin-left: 8px;
+    text-decoration: underline;
+}
+
+::placeholder{
+    font-size: 12px;
+    font-weight: 500;
+    color: #d9d9d9;
+}
+
+input{
+    height: 51px;
+    border: 0;
+    height: 49px;
+    width: 251px;
+}
+
+.imageUpload{
+    margin-top: 36px;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #d9d9d9;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-bottom: 36px;
+}
+
+.fa-plus{
+    font-size: 50px;
+    font-weight: 300 !important;
+    margin-bottom: 7px;
+}
+
+.grayBox{
+    height: 51px;
+    width: 289px;
+    border-radius: 10px;
+    border: 2px solid #d9d9d9;
+    margin-top: 16px;
+    padding-left: 12px;
+}
+
+.grayBoxS{
+    height: 51px;
+    width: 128px;
+    border-radius: 10px;
+    border: 2px solid #d9d9d9;
+    margin-top: 16px;
+    padding-left: 12px;
+}
+
+.gender{
+    margin-right: 9.5px;
+}
+
+.rightImg{
+    width: 345px;
+    text-align: right;
+}
+
+.leftImage{
+    width: 345px;
+    text-align: left;
+}
+
+.generalInfo{
+    margin-top: 40px;
+}
+
+.deviceInfo{
+    margin-top: 40px;
+}
+
+.arrow{
+    display: flex;
+}
+
+.arrow .rightImg{
+    width: 293px;
+}
+
+.healthHistory{
+    margin-top: 61px;
+}
+
+.medicalCondition{
+    margin-top: 37px;
+    font-size: 12px;
+    width: 301px;
+    text-align: left;
+}
+
+.medications, .surgeries, .allergies{
+    margin-top: 30px;
+    font-size: 12px;
+    width: 301px;
+    text-align: left;
+}
+
+.mc, .mm, .surg, .aller{
+    margin-top: 6px;
+}
+
+.skip{
+    font-size: 14px;
+    text-decoration: underline;
+    margin-top: 126px;
+}
+
+.size{
+    margin-bottom: 70px;
+}
+
+.additional{
+    width: 301px;
+    height: 379px;
+    border-radius: 15px;
+    border: 2px solid #d9d9d9;
+    margin-top: 39px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.additionalBox{
+    height: 55px;
+    font-size: 12px;
+    width: 277px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.emergency{
+    border: 0;
+}
+
+.colorGray2{
+    color: #ababab;
+}
+
+.deviceImg{
+    margin-top: 83px;
+}
+
+.connect{
+    background-color: #506FF2;
+    color: white;
+    border-radius: 10px;
+    font-size: 12px;
+    height: 51px;
+    width: 146px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 24px;
+}
+
+.without{
+    background-color:white;
+    border: 2px solid #506FF2;
+    border-radius: 10px;
+    color: #506FF2;
+    font-size: 12px;
+    height: 49px;
+    width: 146px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deviceButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 84px;
+    margin-bottom: 100px;
+}
+
+.top{
+    margin-top: 70px;
+    display: flex;
+    width: 361px;
+    justify-content: space-between;
+}
+
+.location, .temperature{
+    display: flex;
+    font-size: 20px;
+}
+
+.fa-location-dot{
+    color: #506FF2;
+}
+
+.sunny{
+    width: 22px;
+    height: 22px;
+}
+
+#loc{
+    text-decoration: underline;
+    margin-left: 4px;
+}
+
+#temp{
+    margin-left: 4px;
+}
+
+.petInfo{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#petProfic{
+    position: relative;
+    background-image: url('https://placedog.net/800/640?id=177');
+    width: 149px;
+    height: 149px;
+    background-size: cover;
+    border: 10px solid #506FF2;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#breed{
+    position: absolute;
+    padding: 0 10px;
+    height: 25px;
+    background-color:#506FF2;
+    color: white;
+    font-size: 11px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -6px;
+    left: -6px;
+}
+
+#infoNA{
+    font-size: 24px;
+    color: white;
+}
+
+#petStatus{
+    margin-left: 14px;
+}
+
+.bodyTemp, .heartRate{
+    display: flex;
+    flex-direction: column;
+}
+
+.title_status{
+    display: flex;
+    font-size: 11px;
+    color: #506FF2;
+    font-weight: 500;
+}
+
+#heartRateLevel, #bodyTempLevel{
+    margin-left: 11px;
+    height: 17px;
+    padding: 0 10px;
+    background-color: #50F291;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.bodyTempClass, .heartRateClass{
+    display: flex;
+    align-items: baseline;
+}
+
+#bodyTemp{
+    font-size: 46px;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+#heartRate{
+    font-size: 46px;
+    font-weight: 500;
+}
+
+.addinfo{
+    font-size: 28px;
+    font-weight: 500;
+    color:#506FF2;
+    margin-left: 5px;
+}
+
+.commentBox{
+    margin-top: 17px;
+    margin-bottom: 35px;
+    width: 353px;
+    height: 215px;
+    background-image: url('img/speechbubble.svg');
+    padding-top: 30px;
+}
+
+.recommandationPlace{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title_place{
+    font-size: 14px;
+    font-weight: 500;
+    width: 361px;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.info_place{
+    width: 361px;
+    height: 129px;
+    border-radius: 10px;
+    background-color: gray;
+    margin-bottom: 17px;
+}
+
+.pagination{
+    width: 60px;
+    height: 11px;
+    background-color: gray;
+    margin-bottom: 25px;
+}
+
+.nav{
+   width: 393px;
+   height: 80px;
+   display: flex;
+    background-color: #d9d9d9;
+    align-items: center;
+    justify-content: center;
+}
+
+.map, .myPet, .settings{
+    width: 52px;
+    height: 52px;
+    background-color: gray;
+}
+
+.button{
+    display: flex;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.myPet, .map{
+    margin-right: 95px;
+}
+
+.topbubble{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 18px;
+    font-weight: 600;
+    color: #6BA6FD;
+}
+
+.middlebubble{
+    display: flex;
+    text-align: left;
+    padding: 0px 18px;
+    margin-top: 37px;
+    align-items: baseline;
+    font-size: 18px;
+}
+
+#nowTemperature{
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.bottombubble{
+    font-size: 14px;
+    padding: 0 18px;
+    text-align: left;
+    margin-top: 8px;
+    line-height: 24px;
+}
