@@ -45,4 +45,3 @@ function showHeroes(jsonObj) {
       clickable: true,
     },
    });
- 
