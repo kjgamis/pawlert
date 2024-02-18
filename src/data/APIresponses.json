@@ -4,7 +4,7 @@
         "weather": {
             "city": "Toronto",
             "time": "2024-02-17 12:00:00",
-            "temperature": 17,
+            "temperature": 22,
             "humidity": 54.6,
             "weatherSafelyLevel": "Caution"
         },

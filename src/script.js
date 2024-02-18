@@ -16,7 +16,6 @@ let gradient = document.getElementById('gradient');
 let dogName = document.getElementById('dogName');
 
 
-
 var requestURL = "data/APIresponses.json";
 var request = new XMLHttpRequest();
 request.open("GET", requestURL);
