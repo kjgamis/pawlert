@@ -40,7 +40,7 @@ function showHeroes(jsonObj) {
   temp.innerHTML = jsonObj.data.weather.temperature + '°C';
   humidity.innerHTML = 'Humidity: ' + jsonObj.data.weather.humidity + '%';
   nowTemperature.innerHTML = jsonObj.data.weather.temperature + '°C';
-  dogName.innerHTML = jsonObj.data.pet.name + '!';
+  dogName.innerHTML = jsonObj.data.pet.name + '!'; 
 
   let temperatureSen = jsonObj.data.weather.temperature;
 
