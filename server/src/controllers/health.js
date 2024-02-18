@@ -2,6 +2,7 @@ const { askAi, getAddress, getWeather } = require('../helpers')
 
 const health = async (c) => {
   let { location, pet } = await c.req.json()
+  const { WEATHER_API_KEY, MAPS_API_KEY } = c.env
 
   let res = {
     status: 500,
@@ -17,8 +18,8 @@ const health = async (c) => {
     return res
   }
 
-  const weatherRes = await getWeather(location.latitude, location.longitude, location.WEATHER_API_KEY)
-  const addressRes = await getAddress(location.latitude, location.longitude, location.MAPS_API_KEY)
+  const weatherRes = await getWeather(location.latitude, location.longitude, WEATHER_API_KEY)
+  const addressRes = await getAddress(location.latitude, location.longitude, MAPS_API_KEY)
 
   let address = addressRes.street
   let city = addressRes.city
