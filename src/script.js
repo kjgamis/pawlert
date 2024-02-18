@@ -13,7 +13,7 @@ let bottombubble = document.getElementById('bottombubble');
 let loc = document.getElementById('loc');
 let temp = document.getElementById('temp');
 let gradient = document.getElementById('gradient');
-
+let dogName = document.getElementById('dogName');
 
 
 
@@ -40,6 +40,7 @@ function showHeroes(jsonObj) {
   temp.innerHTML = jsonObj.data.weather.temperature + '°C';
   humidity.innerHTML = 'Humidity: ' + jsonObj.data.weather.humidity + '%';
   nowTemperature.innerHTML = jsonObj.data.weather.temperature + '°C';
+  dogName.innerHTML = jsonObj.data.pet.name + '!';
 
   let temperatureSen = jsonObj.data.weather.temperature;
 
