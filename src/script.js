@@ -16,16 +16,6 @@ let gradient = document.getElementById('gradient');
 let dogName = document.getElementById('dogName');
 
 
-var requestURL = "data/APIresponses.json";
-var request = new XMLHttpRequest();
-request.open("GET", requestURL);
-request.responseType = "json";
-request.send();
-
-request.onload = function () {
-    var values = request.response;
-    showHeroes(values);
-  };
 
 function showHeroes(jsonObj) {
   petProfic.style.backgroundImage = `url(${jsonObj.data.pet.image})`;
@@ -91,3 +81,39 @@ let swiper = new Swiper(".mySwiper", {
   },
 });
  
+let values
+
+const myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+
+const raw = JSON.stringify({
+  "location": {
+    "latitude": -33.910728,
+    "longitude": 151.199763
+  },
+  "pet": {
+    "name": "Dapper",
+    "img": "https://placedog.net/800/640?id=177",
+    "breed": "Scottish Terrier",
+    "age": 1.5,
+    "weight": 22,
+    "heartRate": 120,
+    "bodyTemperature": 40
+  }
+});
+
+const requestOptions = {
+  method: "POST",
+  headers: myHeaders,
+  body: raw,
+  redirect: "follow"
+};
+
+fetch("https://pawlert-api.kjgamis.workers.dev/api/health", requestOptions)
+  .then((response) => response.json())
+  .then((result) => {
+    values = result
+    console.log("health", values)
+    showHeroes(values);
+  })
+  .catch((error) => console.error(error));
