@@ -4,7 +4,7 @@
         "weather": {
             "city": "Toronto",
             "time": "2024-02-17 12:00:00",
-            "temperature": -4.3,
+            "temperature": 17,
             "humidity": 54.6,
             "weatherSafelyLevel": "Caution"
         },
@@ -13,10 +13,10 @@
             "image": "https://placedog.net/800/640?id=177",
             "age": 1.5,
             "breed": "Scottish Terrier",
-            "bodyTemperature": 30,
-            "heartRate": 130,
-            "heartRateLevel": "Bad",
-            "bodyTempLevel": "Bad"
+            "bodyTemperature": 50,
+            "heartRate": 120,
+            "heartRateLevel": "caution",
+            "bodyTempLevel": "caution"
         }
     }
 }
