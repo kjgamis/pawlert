@@ -17,7 +17,7 @@ let gradient = document.getElementById('gradient');
 
 
 
-var requestURL = "data/example.json";
+var requestURL = "data/APIresponses.json";
 var request = new XMLHttpRequest();
 request.open("GET", requestURL);
 request.responseType = "json";

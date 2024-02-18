@@ -2,8 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <!-- Favicon (for later)
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+    <link rel="icon" href="favicon.ico" />
     <meta name="viewport" content="width=393, height=852" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +15,7 @@
 />  
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/210e747fd0.js" crossorigin="anonymous"></script>
-    <title>Log In</title>
+    <title>Pawlert</title>
   </head>
   
   <body>
@@ -75,9 +74,30 @@ I just need to stay hydrated and occasionally hide in the shade!
         <div class="recommandationPlace swiper mySwiper">
             <div class="title_place">Things To Do with Me </div>
             <div class="swiper-wrapper info_place">
-                <div class="swiper-slide">1</div>
-                <div class="swiper-slide swipe1">2</div>
-                <div class="swiper-slide swipe2">3</div>
+                <div class="swiper-slide swipe3">
+                    <div class="location_img" id="slide1Img"></div>
+                    <div class="location_info">
+                        <div class="location_place" id="slide1Place">Dog Park</div>
+                        <div class="location_name" id="slide1Name">Fit Dogs</div>
+                        <div class="location_address" id="slide1Address">901 Lake Shore Blvd W, Toronto, ON M5V 1A1</div>
+                    </div>
+                </div>
+                <div class="swiper-slide swipe1">
+                    <div class="location_img" id="slide2Img"></div>
+                    <div class="location_info">
+                        <div class="location_place" id="slide2Place">Dog Park</div>
+                        <div class="location_name" id="slide2Name">Fit Dogs</div>
+                        <div class="location_address" id="slide2Address">142 Nausau St</div>
+                    </div>
+                </div>
+                <div class="swiper-slide swipe2">
+                    <div class="location_img" id="slide3Img"></div>
+                    <div class="location_info">
+                        <div class="location_place" id="slide3Place">Dog Park</div>
+                        <div class="location_name" id="slide3Name">Fit Dogs</div>
+                        <div class="location_address" id="slide3Address">142 Nausau St</div>
+                    </div>
+                </div>
             </div>
             <div class="swiper-pagination"></div>
         </div>
@@ -100,5 +120,6 @@ I just need to stay hydrated and occasionally hide in the shade!
     </div>
 
     <script type="module" src="script.js"></script>
+    <script type="module" src="scriptLocation.js"></script>
   </body>
 </html>

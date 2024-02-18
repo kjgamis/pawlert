@@ -1,0 +1,31 @@
+{
+    "status": 200,
+    "data": {
+        "weather": {
+            "address": "142 Nausau St",
+            "city": "Toronto",
+            "time": "2024-02-17 12:00:00",
+            "temperature": -4.3,
+            "humidity": 54.6,
+            "weatherSafelyLevel": "safe"
+        },
+        "locations": [
+            {
+                "name": "Toronto Islands Park",
+                "address": "901 Lake Shore Blvd W, Toronto, ON M5V 1A1"
+            },
+            {
+                "name": "Rogers Centre",
+                "address": "1 Blue Jays Way, Toronto, ON M5V 1J1"
+            },
+            {
+                "name": "Queen's Park",
+                "address": "99 Queen's Park Crescent W, Toronto, ON M5S 2C3"
+            },
+            {
+                "name": "High Park",
+                "address": "1873 Bloor St W, Toronto, ON M6R 2Z3"
+            }
+        ]
+    }
+}
