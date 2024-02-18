@@ -93,7 +93,7 @@ const raw = JSON.stringify({
   },
   "pet": {
     "name": "Dapper",
-    "img": "https://placedog.net/800/640?id=177",
+    "img": "https://storage.googleapis.com/witalk-411901.appspot.com/static/images/dapper.jpg",
     "breed": "Scottish Terrier",
     "age": 1.5,
     "weight": 22,
