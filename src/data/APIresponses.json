@@ -15,7 +15,7 @@
             "breed": "Scottish Terrier",
             "bodyTemperature": 50,
             "heartRate": 120,
-            "heartRateLevel": "caution",
+            "heartRateLevel": "normal",
             "bodyTempLevel": "caution"
         }
     }

@@ -3,6 +3,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
+        overflow: hidden;
 }
 
 a{
@@ -19,9 +22,10 @@ a{
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     position: relative;
+    margin-top: 30px;
+    overflow: hidden;
 }
 
 .semiBold{
@@ -29,7 +33,7 @@ a{
 }
 
 .logo{
-    margin-top: 50px;
+    margin-top: 150px;
     width: 189px;
     height: 146px;
 }
@@ -52,6 +56,7 @@ a{
     background-color: #506FF2;
     color: white;
     font-size: 12px;
+    margin-top: 20px;
 }
 
 .signup{
@@ -130,6 +135,7 @@ a{
 .loginSignUp{
     margin-left: 8px;
     text-decoration: underline;
+    color: #d9d9d9;
 }
 
 ::placeholder{
@@ -238,7 +244,6 @@ input{
 .skip{
     font-size: 14px;
     text-decoration: underline;
-    margin-top: 126px;
 }
 
 .size{
@@ -267,6 +272,32 @@ input{
     border-bottom: 1px solid #d9d9d9;
 }
 
+.settingsMom{
+    width: 301px;
+    height: 230px;
+    border-radius: 15px;
+    border: 2px solid #d9d9d9;
+    margin-top: 39px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.settingBox{
+    height: 55px;
+    font-size: 14px;
+    width: 277px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.smartCollar{
+    border: 0;
+}
+
 .emergency{
     border: 0;
 }
@@ -289,7 +320,6 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 24px;
 }
 
 .without{
@@ -314,10 +344,10 @@ input{
 }
 
 .top{
-    margin-top: 70px;
     display: flex;
     width: 361px;
     justify-content: space-between;
+    margin-top: 15px;
 }
 
 .location, .temperature{
@@ -445,6 +475,7 @@ input{
     height: 190px;
     background-image: url('img/speechbubble.svg');
     padding-top: 30px;
+    background-repeat: no-repeat;
 }
 
 .recommandationPlace{
@@ -489,6 +520,8 @@ input{
 }
 
 .nav{
+    bottom: 0;
+    position: fixed;
    width: 393px;
    height: 80px;
    display: flex;
@@ -511,10 +544,6 @@ input{
     margin-bottom: 14px;
     color: #506FF2;
     font-size: 35px;
-}
-
-.myPet, .map{
-    margin-right: 95px;
 }
 
 .topbubble{
@@ -573,10 +602,11 @@ input{
 
 .gradient{
     position: absolute;
-    left: 0;
+    left: -20px;
     z-index: -1;
     transition: opacity 0.5s ease-in-out;
-    top: 320px
+    top: 240px;
+    width: 270px;
 }
 
 .loginPage2{
@@ -637,4 +667,31 @@ input{
     width: 350px !important;
     margin-right: 58px !important;
     border-radius: 10px;
+}
+
+.marginAdd{
+    margin-top: 30px;
+}
+
+.navbuttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 11pt;
+    font-weight: 400;
+    color: #A1A1A1;
+}
+
+.navbuttons p{
+    margin: 0;
+}
+
+.navIcon{
+    margin-bottom: 7px;
+}
+
+.emphasize{
+    font-weight: 600;
+    color:#506FF2;
 }
