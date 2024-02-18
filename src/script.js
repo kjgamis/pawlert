@@ -26,7 +26,7 @@ request.send();
 request.onload = function () {
     var values = request.response;
     showHeroes(values);
-  };
+}
 
 function showHeroes(jsonObj) {
   petProfic.style.backgroundImage = `url(${jsonObj.data.pet.image})`;
@@ -91,3 +91,10 @@ let swiper = new Swiper(".mySwiper", {
   },
 });
  
+const get = () => {
+  fetch("https://pet-app.kjgamis.workers.dev")
+  .then((response) => response.json())
+  .then((result) => console.log(result))
+  .catch((error) => console.error(error));
+}
+get()
