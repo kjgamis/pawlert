@@ -1,5 +1,5 @@
 {
-  "name": "pet-app",
+  "name": "pawlert-api",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -8,7 +8,7 @@
     "start": "wrangler dev"
   },
   "devDependencies": {
-    "wrangler": "^3.0.0"
+    "wrangler": "3.30.x"
   },
   "dependencies": {
     "@cloudflare/ai": "^1.0.50",
