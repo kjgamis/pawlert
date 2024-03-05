@@ -141,6 +141,17 @@ Sample Response:
 
 #### Backend API
 
+1. add API keys in `wrangler.toml` (do not commit this)
+
+``` yaml
+# ...
+[vars]
+KEY1=""
+KEY2=""
+```
+
+2. Enter server and run start script
+
 ``` shell
 cd server
 npm run dev
@@ -155,3 +166,7 @@ The front end and backend are deployed separately on Cloudflare.
 cd server
 npm run deploy
 ```
+
+#### Resources
+- https://aqicn.org/api/
+- https://developers.google.com/maps
