@@ -12,8 +12,8 @@ app.use('/*', cors({
 }))
 
 // routes
-app.post('/api/health', health)
-app.post('/api/location', location)
+app.post('/v1/health', health)
+app.post('/v1/location', location)
 app.get('/', async (c) => {
   let res = {
     status: 200,
